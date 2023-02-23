@@ -1,0 +1,35 @@
+>> day0222 의 12testfunction
+   - 가위바위보 난수 
+
+  단항연산이 왜편함? 왜 씀? // 승 패 무 숫자가 늘어나야하니까 사용!
+  
+
+▶ function setting - 가위바위보 랜덤 
+
+ var com = Math.floor((Math.random()*3))+1 ;  
+ 랜덤이 0.9999까지 뜨니까 *3하면 2.999가 나오니까
+ 더하기 1 해줘서 3.9999 뒤에꺼 버려주면 3이나온다.
+ 
+▶ function score - 
+
+
+ document.all.txtTotal.value=totalCount 
+  ㄴ body안에 있는 네임찾는 것
+
+ if ((you==2&com==1) || (you==3&com==2) || (you==1&com==3)){ youCount++ }
+  ㄴ 이기는 조건 주는법 
+
+
+ totalCount를 전역변수로 줘야 계속증가   ==> function밖에 
+ 지역변수로 주게되면 증가하지않음,,
+
+
+ 전역변수를 준후 if문에 바로 전역변수 ++ 사용해도 상관 무
+
+
+ ▶372 page
+   var lotto = [ 24, 7, 12, 45, 39, 6 ] ;
+   var person = { name: 'kim' , age: 27 }
+
+   EcmaScript = ES6
+ (Eurioean Computer Manufactures Association)
